@@ -1,0 +1,17 @@
+GET http://localhost:3001/api/pizzas HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:3001/api/pizzas HTTP/1.1
+Content-Type: application/json
+
+{
+    "pizzaName": "The Demo Pizza",
+    "createdBy": "Lernantino",
+    "size": "Personal",
+    "toppings": [
+        "Sausage",
+        "Pepperoni",
+        "Cherry Peppers"
+    ]
+}
