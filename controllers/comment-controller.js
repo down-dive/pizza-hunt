@@ -1,15 +1,14 @@
 const { Comment, Pizza } = require('../models');
 
 const commentController = {
-  // add comment to pizza
-  addComment() {
-
-  },
-
-  // remove comment
-  removeComment() {
-
-  }
-};
+    // add comment to pizza
+    addComment({ params, body }, res) {
+      console.log(body);
+      Comment.create(body)
+        .then(({ _id }) => {
+          console.log(_id)
+        })
+    }
+  };
 
 module.exports = commentController;
