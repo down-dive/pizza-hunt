@@ -15,3 +15,12 @@ Content-Type: application/json
         "Cherry Peppers"
     ]
 }
+###
+
+POST http://localhost:3001/api/comments/60ade7cc9362038a3c44febe HTTP/1.1
+Content-Type: application/json
+
+{
+  "writtenBy": "Amiko",
+  "commentBody": "This pizza sounds great, but best pizza ever seems like a stretch."
+}
